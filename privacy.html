@@ -1,23 +1,34 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="病友饭卡（Sated）隐私政策：本机优先的饮食记录与嘌呤摄入参考工具。">
-  <title>隐私政策 · 病友饭卡</title>
+  <meta name="description" content="Sated privacy policy for its on-device meal journal and purine intake reference tool.">
+  <title>Privacy Policy · Sated</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header data-language-section="zh-Hans" lang="zh-Hans" hidden>
     <p class="eyebrow">病友饭卡 Sated</p>
     <h1>隐私政策</h1>
     <p class="meta">生效日期：2026年9月20日</p>
   </header>
-  <nav class="nav" aria-label="相关页面">
+  <header data-language-section="en" lang="en">
+    <p class="eyebrow">Sated / 病友饭卡</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: September 20, 2026</p>
+  </header>
+
+  <nav class="nav" data-language-section="zh-Hans" lang="zh-Hans" aria-label="相关页面" hidden>
     <a href="support.html">支持与常见问题</a>
-    <a href="privacy.html" hreflang="en">English</a>
+    <a href="privacy.html?lang=en" hreflang="en">English</a>
+  </nav>
+  <nav class="nav" data-language-section="en" lang="en" aria-label="Related pages">
+    <a href="support.html">Support &amp; FAQ</a>
+    <a href="privacy.html?lang=zh-Hans" hreflang="zh-Hans">简体中文</a>
   </nav>
 
+  <main data-language-section="zh-Hans" lang="zh-Hans" hidden>
   <h2>一、我们是谁</h2>
   <p>病友饭卡（英文名 Sated，以下简称"本应用"）是一款本机优先的饮食记录和嘌呤摄入参考工具。</p>
   <ul>
@@ -80,13 +91,9 @@
   <p>如需就个人信息处理提出查询、更正、删除、撤回同意、投诉或其他请求，请发送邮件至：<a href="mailto:andyzheung@aliyun.com">andyzheung@aliyun.com</a>。我们会在核实请求后依照适用法律处理。</p>
 
   <footer>病友饭卡 Sated · 2026</footer>
+  </main>
 
-  <hr>
-
-  <div lang="en">
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: September 20, 2026</p>
-
+  <main data-language-section="en" lang="en">
     <h2>1. Who We Are</h2>
     <p>Sated (Chinese name 病友饭卡, "the app") is an on-device meal journal and purine intake reference tool.</p>
     <ul>
@@ -149,6 +156,7 @@
     <p>For questions, correction, deletion, consent withdrawal, complaints, or other requests regarding personal information, email <a href="mailto:andyzheung@aliyun.com">andyzheung@aliyun.com</a>. We will handle verified requests in accordance with applicable law.</p>
 
     <footer>Sated · 2026</footer>
-  </div>
+  </main>
+  <script src="language.js"></script>
 </body>
 </html>
