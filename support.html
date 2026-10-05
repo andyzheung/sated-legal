@@ -1,22 +1,28 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en" data-title-zh="支持 · 病友饭卡" data-title-en="Support · Sated">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="病友饭卡（Sated）支持页面与常见问题。">
-  <title>支持 · 病友饭卡</title>
+  <title>Support · Sated</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header data-language-section="zh-Hans" lang="zh-Hans" hidden>
     <p class="eyebrow">病友饭卡 Sated</p>
     <h1>支持与常见问题</h1>
     <p class="meta">本机优先的饮食记录与嘌呤摄入参考工具</p>
   </header>
-  <nav class="nav" aria-label="相关页面">
-    <a href="privacy.html">隐私政策</a>
-    <a href="support.html" hreflang="en">English</a>
+  <header data-language-section="en" lang="en">
+    <p class="eyebrow">Sated / 病友饭卡</p>
+    <h1>Support &amp; FAQ</h1>
+    <p class="meta">On-device meal journal and purine intake reference</p>
+  </header>
+  <nav class="nav" aria-label="Related pages" data-localized-navigation>
+    <a href="privacy.html?lang=en" data-label-zh="隐私政策" data-label-en="Privacy Policy">Privacy Policy</a>
+    <a href="support.html?lang=zh-Hans" hreflang="zh-Hans" data-language-switch>简体中文</a>
   </nav>
+  <main data-language-section="zh-Hans" lang="zh-Hans" hidden>
   <div class="callout">
     <p><b>重要说明：</b>病友饭卡不构成医疗设备，不提供诊断、处方、治疗或剂量建议，也不适用于急救场景。请始终遵循医生、营养师和药品说明的指导。</p>
   </div>
@@ -49,17 +55,9 @@
   <p>不是。摄入数值是按每 100g 食物参考值与份量计算的估算，仅用于饮食记录和一般健康参考。数值可能因食材品种、烹调方式、份量和数据差异而变化。痛风急性发作、慢性肾病或其他合并症用户，请遵循医生或营养师建议。</p>
 
   <footer>病友饭卡 Sated · 2026</footer>
+  </main>
 
-  <hr>
-
-  <div lang="en">
-    <header>
-      <h1>Support &amp; FAQ</h1>
-      <p class="meta">On-device meal journal and purine intake reference</p>
-    </header>
-    <nav class="nav" aria-label="Related pages">
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+  <main data-language-section="en" lang="en">
     <div class="callout">
       <p><strong>Important:</strong> Sated is not a medical device and does not provide diagnoses, prescriptions, treatment, or dosage advice. It is not intended for emergencies. Always follow guidance from your doctor, dietitian, and medication label.</p>
     </div>
@@ -92,6 +90,7 @@
     <p>No. Intake values are estimates based on per-100g reference values and portions, for meal logging and general wellness reference only. Values vary by ingredient, preparation, portion, and data differences. If you have an acute gout flare, chronic kidney disease, or another condition, follow guidance from your clinician or dietitian.</p>
 
     <footer>Sated · 2026</footer>
-  </div>
+  </main>
+  <script src="language.js"></script>
 </body>
 </html>
